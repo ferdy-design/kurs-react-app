@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag kurs-react-app:$(date +%s) && docker push kurs-react-app:$(date +%s)
+      run: docker build . --file Dockerfile --tag kurs-react-app && docker push kurs-react-app
